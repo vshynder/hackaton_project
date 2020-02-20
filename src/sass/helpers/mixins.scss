@@ -1,0 +1,21 @@
+
+@mixin flex-content ($flex, $content, $direction) {
+    display: $flex;
+    justify-content: $content;
+    flex-direction: $direction;
+}
+@mixin title-before ($content, $width, $height,) {
+    content: $content;
+    width: $width;
+    height: $height;
+}
+@mixin title-after ($content, $width, $height,) {
+    content: $content;
+    width: $width;
+    height: $height;
+}
+@mixin link-or-button ($width, $height, $bgc,) {
+    width: $width;
+    height: $height;
+    background-color: $bgc;
+}
