@@ -65,7 +65,7 @@
             box-shadow: 1px 1px 5px $bg-green;
         }
     }
-    &__iphone {
+    &__iphone--position {
         display: none;
     }
     
@@ -103,22 +103,26 @@
             position: relative;
         }
     
-        &__iphone {
-            display: block;
-            position: absolute;
-            bottom: -243px;
-            right: 0;
-            &--small {
-                right: 71px;
+        &__iphone{
+            &--position {
+                display: block;
+                position: absolute;
+                bottom: -243px;
+                right: 0;
+                &-small {
+                    right: 71px;
+                }
             }
+            
         }
+        
     }
 }
 
 @media (min-width: 1200px) {
-    .introduction__iphone {
+    .introduction__iphone--position {
         right: 20px;
-        &--small {
+        &-small {
             right: 126px;
         }
     }
