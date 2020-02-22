@@ -33,7 +33,9 @@
 }
 
 .video__box-svg {
-    text-align: center;
+    display: flex;
+    width: 155px;
+    justify-content: space-between;
 }
 
 .video__box-border {
@@ -54,9 +56,24 @@
     height: auto;
 }
 
-.video__box-icons--apple {
-    margin-right: 18px;
+.icon__box {
+    // display: block;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: $icon-blue;
 }
+
+.icon__box:hover {
+    box-shadow: 0 0 14px darken($icon-blue, 2);
+}
+
+.video__icon {
+    cursor: pointer;
+    padding: 19px 20px;
+}
+
+.video__icon-apple {}
 
 @media (min-width: 768px) {
     .video__box-title {
