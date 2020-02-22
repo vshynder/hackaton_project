@@ -60,7 +60,7 @@
         justify-content: space-around;
         align-content: center;
         cursor: pointer;
-
+        transition: 0.2s 0.2s;
         &:hover {
             box-shadow: 1px 1px 5px $bg-green;
         }
@@ -125,5 +125,11 @@
         &-small {
             right: 126px;
         }
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    .introduction {
+        background-image: url('../images/introduction-bg-mobile@2x.jpg');
     }
 }
