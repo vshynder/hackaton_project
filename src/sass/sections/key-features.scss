@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    &-wrapper {
+        padding: 60px 0 59px;
+    }
 }
 
 .key__title {
@@ -90,6 +93,9 @@
 }
 
 @media (min-width: 768px) {
+    .key-wrapper {
+        padding: 121px 0 115px;
+    }
     .key__box {
         display: flex;
         justify-content: space-between;

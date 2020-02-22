@@ -16,6 +16,7 @@ ul {
     height: $height;
 }
 .feedback {
+    padding-bottom: 60px;
     &__title-top--mobile {
             color: #1ab798;
             font-family: 'Raleway', verdana, sans-serif;
@@ -129,7 +130,7 @@ ul {
 
 @media (min-width: 768px) {
     .feedback {
-
+        padding-bottom: 109px;
         &__title-top--mobile {
             display: none;
         }
@@ -214,6 +215,7 @@ ul {
     }
 
     .feedback {
+        padding-bottom: 127px;
         &__text {
             margin-bottom: 56px;
         }
