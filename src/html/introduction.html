@@ -22,8 +22,16 @@
                 <img src="../images/download-btn-cloud.png" alt="" class="intoduction__btn-cloud">
                 Download
             </button>
-            <img class="introduction__iphone introduction__iphone--big" src="images/introduction-iphone1.png" alt="">
-            <img class="introduction__iphone introduction__iphone--small" src="images/introduction-iphone2.png" alt="">
+            <picture class="introduction__iphone introduction__iphone--big">
+                <source class="introduction__iphone introduction__iphone--big" srcset="images/introduction-iphone1-desktop.png" media="(min-width: 1200px)">
+                <source class="introduction__iphone introduction__iphone--big" srcset="images/introduction-iphone1-tablet.png" media="(min-width: 768px)">
+                <img class="introduction__iphone--position" src="" alt="">
+            </picture>
+            <picture class="introduction__iphone introduction__iphone--small">
+                <source class="introduction__iphone introduction__iphone--small" srcset="images/introduction-iphone2-desktop.png" media="(min-width: 1200px)">
+                <source class="introduction__iphone introduction__iphone--small" srcset="images/introduction-iphone2-tablet.png" media="(min-width: 768px)">
+                <img class="introduction__iphone--position introduction__iphone--position-small" src="" alt="">
+            </picture>
         </div>
     </div>
 </section>
