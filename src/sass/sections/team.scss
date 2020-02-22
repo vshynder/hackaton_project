@@ -1,5 +1,6 @@
 .team {
     margin: 0 auto;
+    padding-top: 94px;
 }
 
 .team__title {
@@ -11,7 +12,6 @@
     font-weight: 700;
     line-height: 36px;
     padding-bottom: 20px;
-    padding-top: 20px;
     text-align: center;
 }
 
@@ -76,6 +76,8 @@
     padding: 16px 23px 133px 26px;
     background: #0eb493;
     opacity: 0;
+    cursor: pointer;
+    transition: 0.2s 0.2s;
 }
 
 .overlay__text { 
@@ -83,7 +85,7 @@
     color: $text-default;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     line-height: 24px;
     width: 221px;
@@ -92,7 +94,7 @@
 }
 .overlay__span {
     font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     width: 221px;
@@ -118,6 +120,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    transition: 0.2s 0.2s;
 }
 .team__icon-link {
     width: 100%;
@@ -152,12 +155,13 @@
 .member__name {
     margin: 0;
     color: $text-team;
-    font-family: "Open Sans - Semibold";
+    font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
     padding-top: 10px;
+    transition: 0.2s 0.2s;
 }
 .member__position {
     @extend %team_job;
@@ -167,13 +171,13 @@
     color: $text-team;
     line-height: 24px;
 }
-@media (min-width: 768px) and (max-width: 1144px) {
+@media (min-width: 768px) {
     .team__title {
         font-size: 28px;
     }
     .team__text {
-    padding: 20px 76px 60px;
-    line-height: 24px; 
+        padding: 20px 76px 60px;
+        line-height: 24px; 
     }
 
     .team__list {
