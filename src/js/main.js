@@ -12,3 +12,4 @@ burgerButton.onclick = function() {
         burgerButton.src = "images/nav__burger.png";
     }
 };
+
