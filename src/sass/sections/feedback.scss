@@ -110,15 +110,20 @@ ul {
         height: 10px;
         text-decoration: none;
         border: none;
+        background-color: #d4d3d4;
 
         &:focus {
             background-color: #1ab798;
         }
     }
 
+    &__relative {
+        position: relative;
+    }
+
     &__image-decoration {
         position: absolute;
-        top: 280px;
+        top: -20px;
         z-index: -1;
     }
 
