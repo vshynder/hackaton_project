@@ -109,21 +109,41 @@
                 position: absolute;
                 bottom: -243px;
                 right: 0;
-                &-small {
-                    right: 71px;
-                }
             }
             
+        }
+        &__iphone {
+            &--big {
+                width: 256px;
+                height: 444px;
+            }
+            &--small {
+                width: 232px;
+                height: 403px;
+            }
+            &--position-small {
+                right: 71px;
+            }
         }
         
     }
 }
 
 @media (min-width: 1200px) {
-    .introduction__iphone--position {
-        right: 20px;
-        &-small {
-            right: 126px;
+    .introduction__iphone {
+        &--position {
+            right: 20px;
+            &-small {
+                right: 126px;
+            }
+        }
+        &--big {
+            width: 382px;
+            height: 663px;
+        }
+        &--small {
+            width: 346px;
+            height: 600px;
         }
     }
 }
