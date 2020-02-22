@@ -36,6 +36,7 @@
     display: flex;
     width: 155px;
     justify-content: space-between;
+    margin: auto;
 }
 
 .video__box-border {
@@ -110,13 +111,12 @@
         text-align: left;
     }
 
-    .video__box-svg {
-        text-align: left;
-    }
-
     .video__box-border {
         height: 100%;
         align-self: flex-end;
+    }
+    .video__box-svg {
+        margin: 0;
     }
 
   }
