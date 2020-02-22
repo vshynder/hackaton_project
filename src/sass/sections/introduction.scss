@@ -1,0 +1,125 @@
+.introduction {
+    padding: 192px 0 105px;
+    position: relative;
+    background-image: url('../images/introduction-bg-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+
+    text-align: left;
+    &__title {
+        margin: 0;
+        color: $text-default;
+        font-family: 'Raleway';
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    &__desc {
+        margin: 0;
+        width: 190px;
+        @extend %key-features_description;
+        color: $text-default;
+        padding: 11px 0 28px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0 0 35px;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 81px;
+    }
+
+    &__item {
+        color: $text-default;
+        font-family: 'Open Sans';
+        font-size: 12px;
+        font-weight: 400;
+        &::before {
+            @include title-before(url('../images/list-style-arrow.png'), 7px, 12px);
+            padding-right: 15px;
+            
+        }
+    }
+
+    &__btn {
+        margin-left: 22px;
+        border: none;
+        background-color: $bg-green;
+        width: 211px;
+        height: 48px;
+        border-radius: 5px;
+        font-family: 'Open Sans';
+        font-size: 20px;
+        font-weight: 400;
+        color: $text-default;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 1px 1px 5px $bg-green;
+        }
+    }
+    &__iphone {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .introduction {
+        padding: 282px 0 150px;
+        &__title {
+            color: $text-default;
+            font-family: 'Raleway';
+            font-size: 42px;
+            font-weight: 700;
+        }
+        &__desc {
+            width: 100%;
+            color: $text-default;
+            font-family: 'Open Sans';
+            font-size: 22px;
+            font-weight: 400;
+            padding: 0 0 45px;
+        }
+        &__list {
+            margin-bottom: 80px;
+        }
+        &__item {
+            color: $text-default;
+            font-family: 'Open Sans';
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+
+        &-content {
+            position: relative;
+        }
+    
+        &__iphone {
+            display: block;
+            position: absolute;
+            bottom: -243px;
+            right: 0;
+            &--small {
+                right: 71px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduction__iphone {
+        right: 20px;
+        &--small {
+            right: 126px;
+        }
+    }
+}
