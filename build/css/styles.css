@@ -909,6 +909,9 @@ p {
   background-color: #007ab9; }
 
 @media (min-width: 768px) {
+  .footer::after {
+    bottom: 40px;
+  }
   .footer__title {
     font-size: 28px;
     line-height: 24px; }
@@ -987,6 +990,7 @@ p {
   .input__wrapp {
     display: flex;
     justify-content: space-between;
+    padding-top: 100px;
     padding-bottom: 20px;
     padding-left: 69px; } }
 
