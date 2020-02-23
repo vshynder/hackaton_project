@@ -773,7 +773,7 @@ p {
     height: 2px;
     background-color: #959595;
     position: absolute;
-    bottom: 40px; }
+    bottom: 80px; }
   .footer__title {
     font-family: 'Raleway', verdana, sans-serif;
     color: #fff;
@@ -885,12 +885,14 @@ p {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
+    margin-bottom: 76px;
     text-transform: uppercase;
     text-align: center; }
   .footer__end-text {
     font-family: 'Open Sans', verdana, sans-serif;
     font-size: 14px;
     font-weight: 400;
+    padding-bottom: 21px;
     line-height: 21px;
     margin: 0;
     color: #acacac; }
