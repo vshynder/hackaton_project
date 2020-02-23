@@ -74,8 +74,7 @@
     width: 270px;
     height: 300px;
     padding: 16px 23px 133px 26px;
-    background: #0eb493;
-    opacity: 0;
+    background: rgba(14,180,147, 0);
     cursor: pointer;
     transition: 0.2s 0.2s;
 }
@@ -90,6 +89,8 @@
     line-height: 24px;
     width: 221px;
     padding: 0 10px 0;
+    opacity: 0;
+    transition: 0.2s 0.2s;
    
 }
 .overlay__span {
@@ -100,6 +101,8 @@
     width: 221px;
     color: $text-default;
     padding: 0 5px 0;
+    opacity: 0;
+    transition: 0.2s 0.2s;
 }
 .team__icon {
     display: flex;
@@ -130,10 +133,15 @@
     align-items: center;
 }
 
+.team__icon-link svg {
+    opacity: 0;
+}
+
 .team__icon svg {
     width: 26px;
     height: 26px;
     fill: $text-default;
+    transition: 0.2s 0.2s;
 }
 
 .team__icon-list:hover {
@@ -145,7 +153,20 @@
 }
 
 .team__member:hover .overlay {
-    opacity: 0.85;
+    background: rgba(14,180,147, 0.85);
+}
+
+.team__member:hover .overlay__text {
+    opacity: 1;
+    transition: 0.2s 0.2s;
+}
+.team__member:hover .overlay__span {
+    opacity: 1;
+    transition: 0.2s 0.2s;
+}
+.team__member:hover .team__icon-link svg {
+    opacity: 1;
+    transition: 0.2s 0.2s;
 }
 
 .team__member:hover .member__name {
